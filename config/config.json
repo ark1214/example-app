@@ -8,14 +8,14 @@
   },
   "test": {
     "username": "qa_user",
-    "password": null,
+    "password": "test1213",
     "database": "todo",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "cheng",
-    "password": null,
+    "username": "prod_user",
+    "password": "prod1213",
     "database": "todo",
     "host": "127.0.0.1",
     "dialect": "postgres"
