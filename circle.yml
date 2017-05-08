@@ -9,5 +9,5 @@ machine:
 database:
   override:
     - createdb todo
-    - createuser -E -P prod_user
+    - echo "CREATE ROLE prod_user WITH LOGIN NOINHERIT ENCRYPTED PASSWORD 'prod12134';" | psql -U postgres
     - echo "Grant all privileges on database todo to prod_user;" | psql -U postgres
