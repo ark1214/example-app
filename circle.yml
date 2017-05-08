@@ -1,0 +1,13 @@
+machine:
+  environment:
+    NODE_ENV: production
+  node:
+    version: v6.1.0
+  services:
+    - postgresql
+
+database:
+  override:
+    - createdb todo
+    - createuser -E -P prod_user
+    - echo "Grant all privileges on database todo to prod_user;" | psql -U postgres
