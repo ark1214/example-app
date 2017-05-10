@@ -15,7 +15,7 @@
   },
   "production": {
     "username": "prod_user",
-    "password": "prod12134",
+    "password": "prod1214",
     "database": "todo",
     "host": "127.0.0.1",
     "dialect": "postgres"
