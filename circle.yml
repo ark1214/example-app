@@ -1,6 +1,6 @@
 machine:
   environment:
-    NODE_ENV: production
+    NODE_ENV: test
   node:
     version: v6.10.2
   services:
@@ -9,5 +9,5 @@ machine:
 database:
   override:
     - createdb todo
-    - echo "CREATE ROLE prod_user WITH LOGIN NOINHERIT ENCRYPTED PASSWORD 'prod12134';" | psql -U postgres
-    - echo "Grant all privileges on database todo to prod_user;" | psql -U postgres
+    - echo "CREATE ROLE qa_user WITH LOGIN NOINHERIT ENCRYPTED PASSWORD 'test1213';" | psql -U postgres
+    - echo "Grant all privileges on database todo to qa_user;" | psql -U postgres
