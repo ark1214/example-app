@@ -1,6 +1,6 @@
 {
   "development": {
-    "username": "cheng",
+    "username": :dev_user",
     "password": null,
     "database": "todo",
     "host": "127.0.0.1",
